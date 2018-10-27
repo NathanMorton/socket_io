@@ -19,7 +19,7 @@ body {
 
 .content {
   background-color: var(--content-color);
-  height: 80vh;
+  height: 70vh;
   width: 90%;
   margin: 20px auto;
   padding: 10px;
@@ -27,19 +27,21 @@ body {
 }
 
 form {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
 }
 
 form > * {
   background-color: var(--content-color);
   padding: 10px;
+  margin: 10px auto;
   border-radius: 5px;
 }
 
 form input {
-  margin-right: 3px;
-  width: 70%;
+  display: block;
+  width: 90%;
   max-width: 350px;
 }
 
