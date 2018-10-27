@@ -1,0 +1,33 @@
+:root {
+  --theme-color: skyblue;   
+  --content-color: #cccccc;
+}
+
+body {
+  background-color: var(--theme-color);
+}
+
+.content {
+  background-color: var(--content-color);
+  height: 80vh;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form > * {
+  background-color: var(--content-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form input {
+  margin-right: 3px;
+  width: 70%;
+  max-width: 350px;
+}
