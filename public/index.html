@@ -8,19 +8,9 @@
   <link rel="stylesheet" href="/style.css">
   <script src="/socket.io/socket.io.js"></script>
   <script src="/jquery.min.js"></script>
-  <script>
-    $(() => {
-      var socket = io();
-      $('form').submit(() => {
-        socket.emit('chat', $('.message').val());
-        $('.message').val('');
-        return false;
-      });
-      socket.on('chat', (message) => {
-        $('.messages').append($('<li>').text(message));
-      });
-    });
-  </script>
+  <!-- <script>
+   
+  </script> -->
 </head>
 <body>
   <div class="chat">

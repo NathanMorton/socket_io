@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 });
 
 socket.on('connection', (client) => {
-  client.on('chat', (message) => {
-    socket.emit('chat', message);
+  client.on('chat', (data) => {
+    socket.emit('chat', data);
   });
 });
 
