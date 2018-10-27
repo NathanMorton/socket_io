@@ -8,8 +8,9 @@
 }
 
 :root {
-  --theme-color: skyblue;   
+  --theme-color: #800020;   
   --content-color: #cccccc;
+  --striped-row: #aaaaaa;
 }
 
 body {
@@ -40,4 +41,8 @@ form input {
   margin-right: 3px;
   width: 70%;
   max-width: 350px;
+}
+
+.messages li:nth-child(odd) {
+  background-color: var(--striped-row);
 }
